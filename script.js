@@ -248,7 +248,7 @@ function display() {
             break;
         case "OpC": 
             lightOP();
-            output = result;
+            output = '' + result;
             break;
         case "OpA": 
         case "OpB":
@@ -256,6 +256,9 @@ function display() {
             break;
         default: 
             break;
+    }
+    if (output.length > 7) {
+        output = output.slice(-8, -1)
     }
     screen.textContent = output;
     // displayAll();
