@@ -132,7 +132,7 @@ function equal() {
             buffer = '' + result;
             break;
         case "OpB":
-            buffer = '' + operate(operator, result, buffer);
+            buffer = '' + operate(operator, result, +buffer);
             operator = undefined;
             break;
         default: 
