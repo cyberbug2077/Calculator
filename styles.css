@@ -1,0 +1,74 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.calculator {
+    background-color: black;
+}
+
+.display {
+    height: 90px;
+    margin: 5px;
+    padding: 10px 16px;
+
+    line-height: 90px;
+    text-align: right;
+
+    font-size: 80px;
+    font-weight: 300;
+    color: white;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 70px);
+    grid-template-areas: 
+        'AC neg DEL divide' 
+        'seven eight nine multiply'
+        'four five six subtract'
+        'one two three add'
+        'zero zero dot equal'
+    ;
+    gap: 14px;
+    margin: 5px;
+}
+
+.keyboard div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(58, 58, 58);
+    border-radius: 50px;
+    
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+
+
+.keyboard .operator {
+    background-color: orange;
+}
+
+.keyboard .equal {
+    background-color: orange;
+}
+
+.keyboard .AC,
+.keyboard .DEL,
+.keyboard .neg {
+    background-color: rgb(172, 172, 170);
+    color: black;
+}
+
+.keyboard .light {
+    color: orange;
+    background-color: white;
+}
